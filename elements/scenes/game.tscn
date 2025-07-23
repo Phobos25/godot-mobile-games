@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://btint21nm7bab"]
+[gd_scene load_steps=3 format=3 uid="uid://btint21nm7bab"]
 
 [ext_resource type="PackedScene" uid="uid://d2uq70fpx50gd" path="res://elements/knife_shooter/knife_shooter.tscn" id="1_r4o4o"]
+[ext_resource type="PackedScene" uid="uid://dga6psxo22nu5" path="res://elements/targets/target/target.tscn" id="2_v8v4l"]
 
 [node name="Game" type="Node2D"]
 
 [node name="KnifeShooter" parent="." instance=ExtResource("1_r4o4o")]
-position = Vector2(317, 960)
+position = Vector2(0, 400)
+
+[node name="Target" parent="." instance=ExtResource("2_v8v4l")]
+position = Vector2(0, -150)
+
+[node name="Camera2D" type="Camera2D" parent="."]
